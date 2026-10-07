@@ -71,16 +71,16 @@ Submission Checklist
 
       To design, audit, and secure an identity management framework for a growing tech company.
     
-# Part 1: Completed identity taxonomy table with risk analysis.
+## Part 1: Completed identity taxonomy table with risk analysis.
 
 <img width="787" height="328" alt="image" src="https://github.com/user-attachments/assets/d514c171-9792-41e5-8abe-7523e5c399b3" />
 
 
-# Part 2: Built a least-privilege access matrix respecting Separation of Duties.
+## Part 2: Built a least-privilege access matrix respecting Separation of Duties.
 
 In this implementation, creating two cloud resources (simulating code repos and production databases using S3 buckets), writing custom least-privilege JSON policies to enforce Separation of Duties, create user groups, and test the permissions.
 
-# Creating the Cloud Resources (S3 Buckets)
+### Creating the Cloud Resources (S3 Buckets)
 
 -	Bucket 1: Give it a name (e.g. fintech-dev-code-ao). Leave defaults and click Create bucket.
 
@@ -94,7 +94,7 @@ Navigate to Amazon S3 > Buckets > Create bucket
 
 <img width="1364" height="499" alt="image" src="https://github.com/user-attachments/assets/0f18a4eb-345b-4c8c-a6e4-d117294b9dc2" />
 
-# Writing Custom Least-Privilege JSON Policies
+### Writing Custom Least-Privilege JSON Policies
 
     To enforce Separation of Duties (SoD) so that developers cannot touch production data and vice-versa
 
@@ -118,7 +118,7 @@ Click the JSON tab and write the policy. The policy below grants Bob access only
 
 Click Next, name it (e.g. FinTech-DBA-Policy), and click Create policy.
 
-# Creating User Groups and Assign Personas
+### Creating User Groups and Assign Personas
     Following best practices, assign these policies to Groups, not individual users.
 
 Navigate to IAM dashboard > click User groups > Create group.
@@ -152,7 +152,7 @@ Navigate to IAM dashboard > IAM Users > Create user.
         User successfully created
 <img width="1361" height="496" alt="image" src="https://github.com/user-attachments/assets/2b9df763-3488-4a0c-95cb-22d39c6586d7" />
 
-# Test and Verify Separation of Duties
+### Test and Verify Separation of Duties
     Test as Sarah (sarah-dev):
 -	Log into the AWS Console using Sarah's credentials.
 -	Navigate to S3.
@@ -182,6 +182,6 @@ Navigate to IAM dashboard > IAM Users > Create user.
   <img width="1357" height="540" alt="image" src="https://github.com/user-attachments/assets/5f8c54d6-978c-460c-ae43-5ef12f60c876" />
 
 
-# Part 3: Answered forensic audit questions using the log snippet.
+## Part 3: Answered forensic audit questions using the log snippet.
 
-# Part 4: Drafted the Zero Trust executive summary.
+## Part 4: Drafted the Zero Trust executive summary.
